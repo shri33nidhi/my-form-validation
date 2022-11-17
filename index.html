@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my form validation</title>
+</head>
+<body>
+<section>
+<div class="container">
+	<div class="header">
+		<h2>Create Account form</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Username</label>
+			<input type="text" minlength="5" placeholder="florinpop17" id="username" />
+			<small>Name must have more than 5 charecters</small>
+		</div>
+		<div class="form-control">
+			<label for="phonenumber">phone number</label>
+			<input type="text" minlength="10" maxlength="10"  pattern="\d{10}" title="please enter exactly 10 digits" placeholder="florinpop17" id="phonenumber" />
+			<small>phone number must have 10 digits</small>
+		</div>
+		<div class="form-control">
+			<label for="email">Email</label>
+			<input type="email" placeholder="a@florin-pop.com" id="email" />
+			<small>email must have @</small>
+		</div>
+        <div class="form-control">
+			<label for="password">Password</label>
+			<input type="password"  minlength="8" placeholder="Password" id="password"/>
+			<small>enter strong password</small>
+		</div>
+		<div class="form-control">
+			<label for="password2">Password check</label>
+			<input type="password" placeholder="Password two" id="password2"/>
+			<small>password not matching</small>
+		</div>
+		<button>Submit</button>
+	</form>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
